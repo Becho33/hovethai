@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+
+{% block title %}Professional Thai Massage{% endblock %}
+{% block meta_description %}Thai Massage In Hove - Professional Thai massage - In Hove!, UK. Deep tissue, reflexology, traditional Thai massage. 5-star rated. Book today!{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative h-[85vh] sm:h-[90vh] min-h-[500px] sm:min-h-[600px] flex items-center">
+    <div class="absolute inset-0">
+        <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="Thai Massage In Hove Massage Studio" class="w-full h-full object-cover">
+        <div class="hero-overlay absolute inset-0"></div>
+    </div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-white">
+        <div class="max-w-2xl">
+            <p class="text-gold-300 font-medium tracking-widest uppercase text-sm mb-4" data-aos="fade-up">Welcome to</p>
+            <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+                Thai Massage In Hove<br>
+                <span class="text-gold-300">Massage Therapy</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                Professional Thai massage therapy - In Hove!.<br>
+                Relax. Restore. Rejuvenate.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-wrap" data-aos="fade-up" data-aos-delay="300">
+                <a href="{{ business.email_link }}" class="bg-gold-400 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-medium hover:bg-gold-500 transition-colors text-center inline-flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    Book Appointment
+                </a>
+                <a href="{{ business.phone_link }}" class="border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-medium hover:bg-white hover:text-gray-800 transition-colors text-center inline-flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    Call Now
+                </a>
+                <a href="{{ business.whatsapp }}" target="_blank" rel="noopener" class="border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-medium hover:bg-[#25D366] hover:border-[#25D366] transition-colors text-center inline-flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rating Badge -->
+<section class="rating-bar py-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-center gap-3 text-white text-center">
+        <div class="flex items-center gap-1">
+            {% for i in range(5) %}
+            <svg class="w-5 h-5 text-gold-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            {% endfor %}
+        </div>
+        <span class="font-medium">5.0 Rating</span>
+        <span class="text-forest-200">|</span>
+        <span class="text-forest-100">70+ Google Reviews</span>
+    </div>
+</section>
+
+<!-- About Preview -->
+<section class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <div class="image-frame">
+                    <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="Thai Massage In Hove - Massage Therapist" class="rounded-2xl shadow-lg w-full max-w-md mx-auto">
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <p class="text-gold-400 font-medium tracking-widest uppercase text-sm mb-3">About Me</p>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-6">A Passion for Healing</h2>
+                <div class="section-divider mb-6" style="margin: 0 0 1.5rem 0;"></div>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    I am a fully qualified Thai massage therapist with years of experience in traditional healing arts. My home-based studio - In Hove! provides a warm, peaceful space where you can truly unwind.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Whether you're looking for relief from chronic pain, stress reduction, or simply a moment of deep relaxation, I tailor each session to your individual needs.
+                </p>
+                <a href="{{ url_for('about') }}" class="text-gold-400 font-medium hover:text-gold-500 transition-colors inline-flex items-center gap-2">
+                    Learn more about me
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="py-20 md:py-28 bg-pattern">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-gold-400 font-medium tracking-widest uppercase text-sm mb-3">What I Offer</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-4">Massage Services</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            {% for service in services %}
+            <div class="service-card bg-white rounded-2xl p-6 sm:p-8 shadow-sm" data-aos="fade-up" data-aos-delay="{{ loop.index * 100 }}">
+                <div class="w-14 h-14 bg-gold-100 rounded-full flex items-center justify-center mb-4">
+                    {{ service_icon(service.icon) }}
+                </div>
+                <h3 class="font-heading text-xl font-semibold text-gray-800 mb-3">{{ service.name }}</h3>
+                <p class="text-gray-600 leading-relaxed">{{ service.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="text-center mt-12" data-aos="fade-up">
+            <a href="{{ url_for('services') }}" class="bg-forest-500 text-white px-8 py-3.5 rounded-full font-medium hover:bg-forest-600 transition-colors inline-flex items-center gap-2">
+                View All Services & Pricing
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Quick View -->
+<section class="py-20 md:py-28">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-gold-400 font-medium tracking-widest uppercase text-sm mb-3">Simple & Transparent</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pricing</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden" data-aos="fade-up">
+            <table class="w-full">
+                <thead>
+                    <tr class="bg-forest-500 text-white">
+                        <th class="py-3 px-4 sm:py-4 sm:px-6 text-left font-heading font-semibold">Duration</th>
+                        <th class="py-3 px-4 sm:py-4 sm:px-6 text-right font-heading font-semibold">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in pricing %}
+                    <tr class="pricing-row border-b border-gray-100">
+                        <td class="py-3 px-4 sm:py-4 sm:px-6 text-gray-700 font-medium">{{ item.duration }}</td>
+                        <td class="py-3 px-4 sm:py-4 sm:px-6 text-right text-gold-400 font-bold text-lg">{{ item.price }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <p class="text-center text-gray-500 mt-4 text-sm">All massage types available at these rates. Cash payment only.</p>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 md:py-28 bg-pattern">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-gold-400 font-medium tracking-widest uppercase text-sm mb-3">What Clients Say</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-4">Testimonials</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            {% for testimonial in testimonials %}
+            <div class="testimonial-card bg-white rounded-2xl p-5 sm:p-8 shadow-sm" data-aos="fade-up" data-aos-delay="{{ loop.index * 100 }}">
+                <div class="flex gap-1 mb-4">
+                    {% for i in range(testimonial.stars) %}
+                    <svg class="w-5 h-5 star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    {% endfor %}
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-4 italic">"{{ testimonial.text }}"</p>
+                <p class="text-sm text-gray-400 font-medium">— {{ testimonial.author }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Map & CTA -->
+<section class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <p class="text-gold-400 font-medium tracking-widest uppercase text-sm mb-3">Find Us</p>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-6">Visit Our Studio</h2>
+                <div class="section-divider mb-6" style="margin: 0 0 1.5rem 0;"></div>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Our peaceful home studio is located in a quiet residential area - In Hove!, East Sussex. Easy parking available nearby.
+                </p>
+                <div class="space-y-3 mb-8">
+                    <p class="flex items-center gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-gold-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        {{ business.address_full }}
+                    </p>
+                    <p class="flex items-center gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-gold-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <a href="tel:+447873 969610" class="hover:text-gold-400 transition-colors">07873 969610</a>
+                    </p>
+                </div>
+                <a href="{{ url_for('contact') }}" class="bg-gold-400 text-white px-8 py-3.5 rounded-full font-medium hover:bg-gold-500 transition-colors inline-block">
+                    Get in Touch
+                </a>
+            </div>
+            <div data-aos="fade-left">
+                <div class="rounded-2xl overflow-hidden shadow-lg h-80">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.5!2d-1.2930!3d51.6615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c17e4a4f9e9d%3A0x0!2sCotman%20Close%2C%20Hove%20OX14%205NH!5e0!3m2!1sen!2suk!4v1"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Thai Massage In Hove Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

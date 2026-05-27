@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+{% block meta_description %}Meet Thai Massage In Hove - a fully qualified Thai massage therapist - In Hove! with years of experience in traditional healing arts.{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-header py-24 md:py-32">
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center text-white">
+        <p class="text-gold-300 font-medium tracking-widest uppercase text-sm mb-3" data-aos="fade-up">Get to Know Me</p>
+        <h1 class="font-heading text-4xl md:text-5xl font-bold" data-aos="fade-up" data-aos-delay="100">About Thai Massage In Hove</h1>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <div class="image-frame">
+                    <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="Thai Massage In Hove - Thai Massage Therapist" class="rounded-2xl shadow-lg w-full">
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="font-heading text-3xl font-bold text-gray-800 mb-6">My Story</h2>
+                <div class="section-divider mb-6" style="margin: 0 0 1.5rem 0;"></div>
+                <div class="space-y-4 text-gray-600 leading-relaxed">
+                    <p>
+                        Welcome! I'm Thai Massage In Hove, a fully qualified and experienced Thai massage therapist based - In Hove!, East Sussex. My journey into massage therapy began with a deep appreciation for the ancient healing traditions of Thailand.
+                    </p>
+                    <p>
+                        Having trained extensively in traditional Thai massage techniques, I bring authentic expertise to every session. My practice combines time-honoured methods with a genuine understanding of each client's unique needs.
+                    </p>
+                    <p>
+                        I operate from a dedicated massage studio in my home, creating a warm, peaceful, and professional environment where you can truly relax and let go of the stresses of everyday life.
+                    </p>
+                    <p>
+                        My approach is holistic — I believe that true wellness comes from treating the whole person, not just the symptoms. Whether you're dealing with chronic pain, recovering from an injury, or simply need time to decompress, I'm here to help.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Studio -->
+<section class="py-20 md:py-28 bg-pattern">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1" data-aos="fade-right">
+                <h2 class="font-heading text-3xl font-bold text-gray-800 mb-6">The Studio</h2>
+                <div class="section-divider mb-6" style="margin: 0 0 1.5rem 0;"></div>
+                <div class="space-y-4 text-gray-600 leading-relaxed">
+                    <p>
+                        My home studio is designed to be a sanctuary of calm. From the moment you step in, you'll feel the difference — soft lighting, soothing atmosphere, and everything arranged for your comfort.
+                    </p>
+                    <p>
+                        I use high-quality massage oils and maintain the highest standards of hygiene and professionalism. Each session is tailored to your specific requirements.
+                    </p>
+                    <p>
+                        Located in a quiet residential area of Hove with convenient parking nearby, the studio is easy to find and offers complete privacy for your treatment.
+                    </p>
+                </div>
+            </div>
+            <div class="order-1 md:order-2" data-aos="fade-left">
+                <div class="image-frame">
+                    <img src="{{ url_for('static', filename='images/2025-06-01.jpg') }}" alt="Massage Studio" class="rounded-2xl shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Me -->
+<section class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-gold-400 font-medium tracking-widest uppercase text-sm mb-3">Why Clients Trust Me</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose Thai Massage In Hove</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                </div>
+                <h3 class="font-heading text-lg font-semibold text-gray-800 mb-2">Fully Qualified</h3>
+                <p class="text-gray-600 text-sm">Professionally trained in authentic Thai massage techniques</p>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                </div>
+                <h3 class="font-heading text-lg font-semibold text-gray-800 mb-2">5-Star Rated</h3>
+                <p class="text-gray-600 text-sm">Perfect rating across 70+ Google reviews</p>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="font-heading text-lg font-semibold text-gray-800 mb-2">Flexible Hours</h3>
+                <p class="text-gray-600 text-sm">Open 6 days a week with extended Friday & Saturday hours</p>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h3 class="font-heading text-lg font-semibold text-gray-800 mb-2">Personal Touch</h3>
+                <p class="text-gray-600 text-sm">Every treatment is tailored to your individual needs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 gold-gradient">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center text-white">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Ready to Feel the Difference?</h2>
+        <p class="text-lg mb-8 opacity-90">Book your session today and experience the healing power of Thai massage.</p>
+        <a href="{{ url_for('contact') }}" class="bg-white text-gold-500 px-8 py-3.5 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-block">
+            Book Now
+        </a>
+    </div>
+</section>
+
+{% endblock %}
