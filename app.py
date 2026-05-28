@@ -25,8 +25,8 @@ BUSINESS = {
         "Wednesday": "10:00 AM – 10:00 PM",
         "Thursday": "10:00 AM – 10:00 PM",
         "Friday": "10:00 AM – 8:00 PM",
-        "Saturday": "10:00 AM – 8:00 PM",
-        "Sunday": "Closed",
+        "Saturday": "10:00 AM – 10:00 PM",
+        "Sunday": "10:00 AM – 10:00 PM",
     },
 }
 
@@ -71,7 +71,7 @@ SERVICES = [
 PRICING = [
     {"duration": "30 minutes", "price": "£35"},
     {"duration": "60 minutes", "price": "£60"},
-    {"duration": "90 minutes", "price": "£85"},
+    {"duration": "90 minutes", "price": "£90"},
     {"duration": "120 minutes", "price": "£110"},
 ]
 
